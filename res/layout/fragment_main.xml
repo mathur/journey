@@ -9,8 +9,181 @@
     tools:context="com.rohan.journey.MainActivity$PlaceholderFragment">
 
     <TextView
-        android:text="@string/hello_world"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="City Zip Code:"
+        android:id="@+id/textView"
+        android:layout_alignBottom="@+id/txtZip"
+        android:layout_toLeftOf="@+id/txtZip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Time Availible:"
+        android:id="@+id/textView2"
+        android:layout_alignBottom="@+id/txtTime"
+        android:layout_toLeftOf="@+id/txtTime" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Budget:"
+        android:id="@+id/textView3"
+        android:layout_alignBottom="@+id/txtBudget"
+        android:layout_toLeftOf="@+id/txtBudget" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Number of People:"
+        android:id="@+id/textView4"
+        android:textSize="16dp"
+        android:layout_alignBottom="@+id/txtNumPeople"
+        android:layout_toLeftOf="@+id/txtNumPeople" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="----------------------------------------------------------------------"
+        android:id="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView4"
+        android:layout_toLeftOf="@+id/txtZip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Interested in?"
+        android:id="@+id/textView6"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView5"
+        android:layout_toLeftOf="@+id/txtZip" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Museums"
+        android:id="@+id/museumsCheck"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView6"
+        android:layout_toLeftOf="@+id/txtZip" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/parksCheck"
+        android:layout_alignParentStart="true"
+        android:checked="false"
+        android:text="Parks"
+        android:layout_below="@+id/museumsCheck"
+        android:layout_toLeftOf="@+id/txtZip" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Misc Attractions"
+        android:id="@+id/miscCheck"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/parksCheck"
+        android:layout_toLeftOf="@+id/txtZip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="----------------------------------------------------------------------"
+        android:id="@+id/textView7"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/miscCheck"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_alignEnd="@+id/textView5" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Include Meals?"
+        android:id="@+id/mealSwitch"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Include Hotel?"
+        android:id="@+id/hotelSwitch"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/mealSwitch"
+        android:layout_alignRight="@+id/mealSwitch"
+        android:layout_alignEnd="@+id/mealSwitch" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="----------------------------------------------------------------------"
+        android:id="@+id/textView8"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/hotelSwitch"
+        android:layout_alignRight="@+id/hotelSwitch"
+        android:layout_alignEnd="@+id/hotelSwitch" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plan my excursions!"
+        android:id="@+id/button"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/textView8"
+        android:layout_below="@+id/textView8"
+        android:layout_toLeftOf="@+id/txtZip" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txtZip"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/txtTime"
+        android:layout_below="@+id/txtZip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/txtBudget"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txtNumPeople"
+        android:layout_below="@+id/txtBudget"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
