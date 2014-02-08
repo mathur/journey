@@ -23,10 +23,10 @@ public class MainActivity extends Activity {
         }
 
         //yelp start
-        String consumerKey = "secret";
-        String consumerSecret = "secret";
-        String token = "secret";
-        String tokenSecret = "secret";
+        String consumerKey = "en0PMO3zVD1cFux1mjymRA";
+        String consumerSecret = "iCkzEHXCYgS-_I4eQue3PYj77c4";
+        String token = "IQz9kKK1v4x6ZRgtXScZ9oBm62cFpT_M";
+        String tokenSecret = "Fd6vRaOuTGL5bBWlUyhK33HTDI0";
 
         // TODO: Run this on a new background thread instead of main one (android doesnt allow)
         Yelp yelp = new Yelp(consumerKey, consumerSecret, token, tokenSecret);
