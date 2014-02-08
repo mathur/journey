@@ -1,7 +1,4 @@
-/*
- Example code based on code from Nicholas Smith at http://imnes.blogspot.com/2011/01/how-to-use-yelp-v2-from-java-including.html
- For a more complete example (how to integrate with GSON, etc) see the blog post above.
- */
+package com.rohan.journey;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
