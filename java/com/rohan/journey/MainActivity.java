@@ -21,6 +21,16 @@ public class MainActivity extends Activity {
                     .add(R.id.container, new PlaceholderFragment())
                     .commit();
         }
+
+        //yelp start
+        String consumerKey = "secret";
+        String consumerSecret = "secret";
+        String token = "secret";
+        String tokenSecret = "secret";
+
+        // TODO: Run this on a new background thread instead of main one (android doesnt allow)
+        Yelp yelp = new Yelp(consumerKey, consumerSecret, token, tokenSecret);
+        // String response = yelp.search("museum", <latitude>, <longitude>);
     }
 
 
